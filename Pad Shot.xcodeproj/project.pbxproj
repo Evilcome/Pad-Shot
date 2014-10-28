@@ -14,6 +14,7 @@
 		B03513AE19FFF805005C0ADB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03513AD19FFF805005C0ADB /* Images.xcassets */; };
 		B03513B119FFF805005C0ADB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B03513AF19FFF805005C0ADB /* LaunchScreen.xib */; };
 		B03513BD19FFF805005C0ADB /* Pad_ShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03513BC19FFF805005C0ADB /* Pad_ShotTests.swift */; };
+		B03513C719FFF8C5005C0ADB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B03513C619FFF8C5005C0ADB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B03513B619FFF805005C0ADB /* Pad ShotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pad ShotTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03513BB19FFF805005C0ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B03513BC19FFF805005C0ADB /* Pad_ShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pad_ShotTests.swift; sourceTree = "<group>"; };
+		B03513C619FFF8C5005C0ADB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				B03513A119FFF804005C0ADB /* Pad Shot */,
 				B03513B919FFF805005C0ADB /* Pad ShotTests */,
 				B03513A019FFF804005C0ADB /* Products */,
+				B03513C619FFF8C5005C0ADB /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +220,7 @@
 			files = (
 				B03513A919FFF805005C0ADB /* SecondViewController.swift in Sources */,
 				B03513A519FFF805005C0ADB /* AppDelegate.swift in Sources */,
+				B03513C719FFF8C5005C0ADB /* README.md in Sources */,
 				B03513A719FFF805005C0ADB /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +346,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Pad Shot/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -352,7 +358,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Pad Shot/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
