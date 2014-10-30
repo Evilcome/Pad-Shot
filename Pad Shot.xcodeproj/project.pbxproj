@@ -15,6 +15,7 @@
 		B03513B119FFF805005C0ADB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B03513AF19FFF805005C0ADB /* LaunchScreen.xib */; };
 		B03513BD19FFF805005C0ADB /* Pad_ShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03513BC19FFF805005C0ADB /* Pad_ShotTests.swift */; };
 		B03513C719FFF8C5005C0ADB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B03513C619FFF8C5005C0ADB /* README.md */; };
+		B0C23EB91A028CA500947428 /* RecentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C23EB81A028CA500947428 /* RecentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B03513BB19FFF805005C0ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B03513BC19FFF805005C0ADB /* Pad_ShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pad_ShotTests.swift; sourceTree = "<group>"; };
 		B03513C619FFF8C5005C0ADB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0C23EB81A028CA500947428 /* RecentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +86,11 @@
 			children = (
 				B03513A419FFF805005C0ADB /* AppDelegate.swift */,
 				B03513A619FFF805005C0ADB /* FirstViewController.swift */,
+				B0C23EB81A028CA500947428 /* RecentsViewController.swift */,
 				B03513A819FFF805005C0ADB /* SecondViewController.swift */,
-				B03513AA19FFF805005C0ADB /* Main.storyboard */,
 				B03513AD19FFF805005C0ADB /* Images.xcassets */,
 				B03513AF19FFF805005C0ADB /* LaunchScreen.xib */,
+				B03513AA19FFF805005C0ADB /* Main.storyboard */,
 				B03513A219FFF804005C0ADB /* Supporting Files */,
 			);
 			path = "Pad Shot";
@@ -167,6 +170,7 @@
 				TargetAttributes = {
 					B035139E19FFF804005C0ADB = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = UMQMHH9L4Q;
 					};
 					B03513B519FFF805005C0ADB = {
 						CreatedOnToolsVersion = 6.1;
@@ -218,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C23EB91A028CA500947428 /* RecentsViewController.swift in Sources */,
 				B03513A919FFF805005C0ADB /* SecondViewController.swift in Sources */,
 				B03513A519FFF805005C0ADB /* AppDelegate.swift in Sources */,
 				B03513C719FFF8C5005C0ADB /* README.md in Sources */,
@@ -419,6 +424,7 @@
 				B03513C219FFF805005C0ADB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B03513C319FFF805005C0ADB /* Build configuration list for PBXNativeTarget "Pad ShotTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +433,7 @@
 				B03513C519FFF805005C0ADB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
