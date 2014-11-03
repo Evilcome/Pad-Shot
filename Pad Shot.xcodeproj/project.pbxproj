@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B030BC5D1A06157D00D95D07 /* ShotsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B030BC5C1A06157D00D95D07 /* ShotsCollectionViewCell.swift */; };
 		B03513A519FFF805005C0ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03513A419FFF805005C0ADB /* AppDelegate.swift */; };
 		B03513A719FFF805005C0ADB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03513A619FFF805005C0ADB /* FirstViewController.swift */; };
 		B03513A919FFF805005C0ADB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03513A819FFF805005C0ADB /* SecondViewController.swift */; };
@@ -15,7 +16,9 @@
 		B03513B119FFF805005C0ADB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B03513AF19FFF805005C0ADB /* LaunchScreen.xib */; };
 		B03513BD19FFF805005C0ADB /* Pad_ShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03513BC19FFF805005C0ADB /* Pad_ShotTests.swift */; };
 		B03513C719FFF8C5005C0ADB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B03513C619FFF8C5005C0ADB /* README.md */; };
-		B0C23EB91A028CA500947428 /* RecentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C23EB81A028CA500947428 /* RecentsViewController.swift */; };
+		B06C9B3F1A0607F70020C0CF /* ShotsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06C9B3E1A0607F70020C0CF /* ShotsCollectionViewController.swift */; };
+		B06C9B411A060D1C0020C0CF /* ShotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06C9B401A060D1C0020C0CF /* ShotDetailViewController.swift */; };
+		B06C9B451A0610FC0020C0CF /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B06C9B441A0610FC0020C0CF /* car.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B030BC5C1A06157D00D95D07 /* ShotsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B035139F19FFF804005C0ADB /* Pad Shot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pad Shot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03513A319FFF804005C0ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B03513A419FFF805005C0ADB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +45,9 @@
 		B03513BB19FFF805005C0ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B03513BC19FFF805005C0ADB /* Pad_ShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pad_ShotTests.swift; sourceTree = "<group>"; };
 		B03513C619FFF8C5005C0ADB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B0C23EB81A028CA500947428 /* RecentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsViewController.swift; sourceTree = "<group>"; };
+		B06C9B3E1A0607F70020C0CF /* ShotsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotsCollectionViewController.swift; sourceTree = "<group>"; };
+		B06C9B401A060D1C0020C0CF /* ShotDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotDetailViewController.swift; sourceTree = "<group>"; };
+		B06C9B441A0610FC0020C0CF /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +90,14 @@
 		B03513A119FFF804005C0ADB /* Pad Shot */ = {
 			isa = PBXGroup;
 			children = (
+				B06C9B441A0610FC0020C0CF /* car.jpg */,
 				B03513A419FFF805005C0ADB /* AppDelegate.swift */,
-				B03513A619FFF805005C0ADB /* FirstViewController.swift */,
-				B0C23EB81A028CA500947428 /* RecentsViewController.swift */,
-				B03513A819FFF805005C0ADB /* SecondViewController.swift */,
+				B06C9B3E1A0607F70020C0CF /* ShotsCollectionViewController.swift */,
+				B030BC5C1A06157D00D95D07 /* ShotsCollectionViewCell.swift */,
+				B06C9B401A060D1C0020C0CF /* ShotDetailViewController.swift */,
 				B03513AD19FFF805005C0ADB /* Images.xcassets */,
+				B03513A619FFF805005C0ADB /* FirstViewController.swift */,
+				B03513A819FFF805005C0ADB /* SecondViewController.swift */,
 				B03513AF19FFF805005C0ADB /* LaunchScreen.xib */,
 				B03513AA19FFF805005C0ADB /* Main.storyboard */,
 				B03513A219FFF804005C0ADB /* Supporting Files */,
@@ -202,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06C9B451A0610FC0020C0CF /* car.jpg in Resources */,
 				B03513AC19FFF805005C0ADB /* Main.storyboard in Resources */,
 				B03513B119FFF805005C0ADB /* LaunchScreen.xib in Resources */,
 				B03513AE19FFF805005C0ADB /* Images.xcassets in Resources */,
@@ -222,11 +232,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C23EB91A028CA500947428 /* RecentsViewController.swift in Sources */,
 				B03513A919FFF805005C0ADB /* SecondViewController.swift in Sources */,
+				B030BC5D1A06157D00D95D07 /* ShotsCollectionViewCell.swift in Sources */,
 				B03513A519FFF805005C0ADB /* AppDelegate.swift in Sources */,
+				B06C9B3F1A0607F70020C0CF /* ShotsCollectionViewController.swift in Sources */,
 				B03513C719FFF8C5005C0ADB /* README.md in Sources */,
 				B03513A719FFF805005C0ADB /* FirstViewController.swift in Sources */,
+				B06C9B411A060D1C0020C0CF /* ShotDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +368,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -368,6 +381,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

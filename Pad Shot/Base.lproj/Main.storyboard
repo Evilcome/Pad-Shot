@@ -44,52 +44,6 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Pad Shot-->
-        <scene sceneID="YsU-iU-WO3">
-            <objects>
-                <tableViewController id="Vn6-Ak-Mem" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uJW-l7-l7Q">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="oeA-Nm-dsk" detailTextLabel="DuE-SM-Keq" style="IBUITableViewCellStyleValue1" id="qQ3-kf-R7e">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQ3-kf-R7e" id="TNn-YB-oJR">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oeA-Nm-dsk">
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DuE-SM-Keq">
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Vn6-Ak-Mem" id="C5j-tS-3Bq"/>
-                            <outlet property="delegate" destination="Vn6-Ak-Mem" id="kOO-bO-lfL"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Pad Shot" id="Khf-Vb-TeF">
-                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="bAW-8b-M3v"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="AKS-hf-iav"/>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c7T-SA-WWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1478" y="-1025"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="KQQ-xU-T69">
             <objects>
@@ -100,12 +54,104 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Vn6-Ak-Mem" kind="relationship" relationship="rootViewController" id="Yej-as-sSy"/>
+                        <segue destination="bRX-T4-61w" kind="relationship" relationship="rootViewController" id="SxJ-0Z-ViX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ra-yV-WaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-1025"/>
+        </scene>
+        <!--Pad Shots-->
+        <scene sceneID="gm8-v6-3C7">
+            <objects>
+                <collectionViewController id="bRX-T4-61w" customClass="ShotsCollectionViewController" customModule="Pad_Shot" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="neX-Li-tr0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="s4H-a3-p2o">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="7SN-JY-tQx" customClass="ShotsCollectionViewCell" customModule="Pad_Shot">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zgY-ES-DCS">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="zgY-ES-DCS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="zgY-ES-DCS"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="imgView" destination="zgY-ES-DCS" id="h4G-oJ-SaR"/>
+                                    <segue destination="ZyD-XV-Iqw" kind="show" id="tu3-Dn-rWC"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Pad Shots" id="knH-aE-pbE"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLt-oc-cfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464" y="-1026"/>
+        </scene>
+        <!--Shot Detail View Controller-->
+        <scene sceneID="ef4-br-PBq">
+            <objects>
+                <viewController id="ZyD-XV-Iqw" customClass="ShotDetailViewController" customModule="Pad_Shot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0nO-5P-uAG"/>
+                        <viewControllerLayoutGuide type="bottom" id="8sx-Le-Nal"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2c0-Sf-akT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rk9-Yu-mce">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="287"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rk9-Yu-mce"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="rk9-Yu-mce"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="detailImage" destination="rk9-Yu-mce" id="TCF-r8-pz6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVO-sX-GSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2206.5" y="-1026"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
